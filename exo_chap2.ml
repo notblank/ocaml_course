@@ -33,11 +33,11 @@ let area_circle r = Float.pi *. r *. r
  * assert (((area_circ 1) -. Float.pi) < 1e-4) *)
 
 let is_date day month =
-    if List.mem month ["Apr"; "Jun"; "Aug"; "Oct"; "Dic"]  
+    if List.mem month ["Apr"; "Jun"; "Sep"; "Nov"]  
     then 
         if day <= 31 then 
             print_string("is date") else print_string("is not")
-    else if List.mem month ["Jan"; "Mar"; "May"; "Jul"; "Sep"; "Nov"]  then
+    else if List.mem month ["Jan"; "Mar"; "May"; "Jul"; "Aug"; "Oct"; "Dic"]  then
         if day <= 30 then 
             print_string("is date") else print_string("is not")
     else
